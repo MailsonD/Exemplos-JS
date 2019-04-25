@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo 4</title>
+</head>
+<body>
+
+<!-- 
+Adicionando elementos a um array
+ -->
+
+<!-- 
+Neste exemplo iremos mostraro como fazer o JavaScript ler e escrever valores no HTML, além de utilizar Arrays para isso. 
+Assim como o css, o JS necessita de algum meio para manipular um elemento específico do HTML. A melhor forma de se fazer isso é utilizando ID.
+Através de um ID, um código JS pode escrever valores dentro daquela tag, pegar valores que já estão naquela tag, e escrever código HTML dentro daquela tag.
+ -->
+
+<!-- Vemos aqui um input simples para receber um texto e adicionar em uam coleção que possuímos no nosso código JS -->
+	<input type="text" id="texto" placeholder="Escreva algo"/>
+<!-- O botão logo a frente faz com que uma função JS seja ativada para escrever esse texto dentro da nossa coleção -->
+	<button onclick="escrever()">Enviar</button>
+ 	<br/>
+<!-- E esse botão ira servir para mostrar os elementos que já estão na nossa coleção -->
+ 	<button onclick="mostrar()">Mostrar</button>
+ 	<p id="mostrar"></p>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
