@@ -82,3 +82,8 @@ function mostrar(){
 	//Nesse caso, se a string possuir outras tags HTML, elas tb serão interpretadas e funcionarão normalmente.
 	meuParagrafo.innerHTML = resultado;
 }
+
+/*
+Após entender todo esse exemplo, tente modificar esse código para que o array só receba numeros, 
+e ao clicar no botão de mostrar, exiba a média de todos aqueles números;
+*/
