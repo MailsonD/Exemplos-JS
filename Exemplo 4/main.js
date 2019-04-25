@@ -53,10 +53,32 @@ Inclusive outras tags.
 */
 
 function mostrar(){
+	/*
+	Na função anterior, pegamos diretamente o valor do elemento, pq era a unica coisa que nos interessava,
+	Aqui, vamos pegar realmente a referência do elemento para que possamos adicionar código a tag
+	*/
 	let meuParagrafo = document.getElementById("mostrar");
+	//Agra que temos o nosso P, podemos adicionar a ele todos os nomes que foram adiconados a nosso array;
 	let resultado = "";
+	//Fazemos um for para percorrer todo o array, e a cada indice do array, iremos adicionar a string 
+	//com o resultado dentro do P, seguido de uma quebra de linha.
+	/*
+	Imaginando que o usuário digite: foi, vai, irei;
+	O código HTML após a execução desta função ficaria:
+	<p>
+		foi <br/>
+		vai <br/>
+		irei <br/>
+	</p>
+	*/
 	for (var i = 0; i < meuArray.length; i++){
-	 	resultado += meuArray[i]+"<br/>";
-	} 
+	 	resultado += meuArray[i]+" <br/>";
+	 	//Aqui dentro eu estou gerando a cada nova iteração uma concatenação 
+	 	//da palvra com uma quebra de linha, e concatenando tudo isso em uma única variável
+	}
+	
+	//Aqui utilizandos a referência do elemento P para que possamos escrever algo dentro da tag;
+	//Para isso utilizamos o innerHTML, quen nos permite adicionar uma String dentro daquela tag;
+	//Nesse caso, se a string possuir outras tags HTML, elas tb serão interpretadas e funcionarão normalmente.
 	meuParagrafo.innerHTML = resultado;
 }
