@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo 1</title>
+</head>
+<body>
+
+<!-- 
+Assim como o CSS, existem 3 formas simples de se trabalhar com JavaScript e HTML.
+
+A forma que utilizamos a seguir, é o JavaScript incorporado ao HTML, ou seja, que fica dentro do corpo da página.
+
+ -->
+
+ 	<h1>Hello World</h1>
+
+ 	<!-- 
+	Note que o código JavaScript abaixo está sendo executado ao final do body; Como toda linguagem de script, a ordem de execução das coisas é sempre importante. Por isso, é sempre tomar cuidado onde você executa um script.
+	Pelo fato de JS ser uma linguagem que é feita para a manipulação do elementos HTML da sua página, é aconselhado que você ponha todos os seus códigos JS para que sejam executados no final da página; Pois ao final do body, todos os elementos HTML já estarão carregados e prontos para a manipulação.
+ 	 -->
+
+	<script type="text/javascript">
+		//O código abaixo usa um evendo do nageador para interagir com o usuário de alguma forma.
+		//Como é um recurso nativo do navegador, o seu visual varia de navegador para navegador
+		alert("Hello World");
+		//O alert tb faz com que pare a execução da página até que o usuário dê algum tipo de confirmação para o evento
+
+
+		//Já o console, é uma das ferramentas mais importantes que se pode utilizar em JavaScript
+		//Ele funciona como uma ferramenta auxiliar para que você possa entender como o seu código está rodando, e o que é executado primeiro
+		console.log("Hello World");
+		//É possível acessar o console do navegador apertando F12 na página onde você se encontra, para que seja possível a visualização do mesmo
+		//Além disso, o console também monstra todo e qualquer erro de sintaxe e de execução que acontece no seu código JavaScript. É sempre bom ficar de olho nele
+	</script>
+
+
+</body>
+</html>
