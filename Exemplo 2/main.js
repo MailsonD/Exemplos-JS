@@ -5,7 +5,7 @@ var sobrenome = "das Couves";
 
 //Vemos aqui duas maneiras de se declarar uma variável;
 //Ambas funcionam perfeitamente, e muito parecidas uma com a outra, porém, elas possuem um pequeno detalhe com relação a escopo
-//Variaveis criadas com var, elas podem ser declaradas, dentro ou fora de um bloco, que poderão ser usadas da mesma forma
+//Variaveis criadas com var, elas podem ser declaradas dentro ou fora de um bloco, que poderão ser usadas da mesma forma
 //Ex:
 /*
 if(idade>=18){
@@ -28,3 +28,6 @@ if(idade>=18){
 //Concatenando Strings
 
 alert("Seu nome é "+nome+" "+sobrenome);
+
+//Operações relacioadas a Strings e Substrings são muito importantes e utilizadas com bastante frequência;
+//É aconselhado que se dê uma olhada em algumas delas depois
