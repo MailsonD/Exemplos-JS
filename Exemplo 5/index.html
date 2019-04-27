@@ -18,10 +18,16 @@ Faremos com que esses dois atributos após cadastrados, sejam armazenados no nav
 <!-- 
 Note na tag body o evento onload. O que esse evento quer dizer?
 Ele diz que assim que o html carregar todas as tags dentro do body, ele irá chamar aquela função alí no js que fará alguma coisa.
-Esse tipo de evento é muito útil para que você garanta que um trexo de código só vai ser executado assim que um determinado elemento for carregado.
+Esse tipo de evento é muito útil para que você garanta que um trecho de código só vai ser executado assim que um determinado elemento for carregado.
 Mas por hora, ignore a função de carregar() e siga aqui abaixo.
  -->
 
+<!-- 
+	Note o evento onsubmit. O que quer dizer?
+	Esse evento é ativando assim que o formulário for submetido. Ou seja, sempre que for pressionado o botão de enviar.
+	Quando um formulário é submetido, normalmente é gerada uma requisição e a página ou recarrega ou redireciona o usuário para outra página.
+	Para que isso não aconteça aqui, colocamos o return false no onsubmit, para que ele não faça outra requisição e continue na mesma página.
+ -->
 	<form onsubmit="return false">
 		<label for="cpf">CPF</label><br/>
 		<input type="text" id="inputCpf" placeholder="xxx.xxx.xxx-xx"/>
@@ -29,7 +35,22 @@ Mas por hora, ignore a função de carregar() e siga aqui abaixo.
 		<label for="nome">Nome</label><br/>
 		<input type="text" id="inputNome" placeholder="Escreva seu nome" />
 		<br/>
-		<button id="btnEnviar" onclick="salvar()" onmouseover="doItRed(event)" onmouseout="doItNormal(event)">Enviar</button>
+
+		<!--
+		Temos três eventos interessantes aqui neste botão. Todos envolvendo o mouse. O primeiro é o de click que já conhecemos.
+		O segundo e o terceiro são:
+		Onmouseover: é ativado quando o mouse está por cima do elemento, chamando uma função js;
+		Onmouseout: é ativado quando o mouse estava por cima do elemento mas é retirado de lá. 
+		  -->
+		<button type="submit" onclick="salvar()" onmouseover="doItRed(event)" 
+		onmouseout="doItNormal(event)">Enviar</button>
+
+		<!--
+		Nesse caso aqui, o evento de mouseover faz com que o texto do botão fique vermelho, sempre que o mouse estiver encima do botão. e quando o mouse não estiver mais por cima do botão ele voltará a cor normal.
+
+		Note que eu mando um parametro para as funções, chamado event. 
+		Esse parameto ele tem todas as informações do evento que acabou de ser ativo, inclusive os dados do elemento que o ativou, neste caso, o botão.
+		 -->
  	</form>
 
  	<table id="dataTable" border="1.5" hidden="true">
