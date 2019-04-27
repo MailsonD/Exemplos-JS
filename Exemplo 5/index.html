@@ -15,6 +15,13 @@ Vamos criar um cadastro simples com dois atributos apenas;
 Faremos com que esses dois atributos após cadastrados, sejam armazenados no navegador e possam ser mostrados abaixo.
  -->
 
+<!-- 
+Note na tag body o evento onload. O que esse evento quer dizer?
+Ele diz que assim que o html carregar todas as tags dentro do body, ele irá chamar aquela função alí no js que fará alguma coisa.
+Esse tipo de evento é muito útil para que você garanta que um trexo de código só vai ser executado assim que um determinado elemento for carregado.
+Mas por hora, ignore a função de carregar() e siga aqui abaixo.
+ -->
+
 	<form>
 		<label for="cpf">CPF</label><br/>
 		<input type="text" id="cpf" placeholder="xxx.xxx.xxx-xx"/>
@@ -29,6 +36,12 @@ Faremos com que esses dois atributos após cadastrados, sejam armazenados no nav
  		
  	</table>
 
+
+<!-- 
+Nós dividimos o nosso código Js em vários arquivos aqui, isso tráz uma organização considerável para nosso código.
+É aconselhavel que você separe cada arquivo tendo uma função específica para o programa como um todo.
+Siga daqui em diante abrindo cada um dos arquivos na ordem em que estão aqui para que você não se perca no caminho
+ -->
 
  	<script type="text/javascript" src="objects.js"></script>	
  	<script type="text/javascript" src="storage.js"></script>	

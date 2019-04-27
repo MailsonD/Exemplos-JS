@@ -61,6 +61,15 @@ Para facilitar o trabalho com objetos nesse quesito, vou disponibilizar duas fun
 objeto para JSON, e de JSON para objeto.
 */
 
+
+let array = ['lucas','jonas','marcos'];
+
+/*
+Experimente adicionar esse array no localStorage (Arrays também são objetos)
+E depois tente pegá-lo de volta com as funções abaixo.
+Faça isso descomentando a linha do array e chamando as funções através do console;
+*/
+
 function setObjectLocalStorage(key,value){
 	localStorage.setItem(key, JSON.stringify(value));
 }
