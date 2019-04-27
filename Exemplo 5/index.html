@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo 5</title>
+</head>
+<body onload="carregar()">
+
+<!--
+Neste exemplo veremos como armazenar dados localmente e como funcionar a ferramente de armazenamento local.
+Além disso iremos trabalhar com dois tipos de eventos importantes de Js para aumentar o nível de interação com o usuário.
+ -->
+
+<!-- 
+Vamos criar um cadastro simples com dois atributos apenas;
+Faremos com que esses dois atributos após cadastrados, sejam armazenados no navegador e possam ser mostrados abaixo.
+ -->
+
+	<form>
+		<label for="cpf">CPF</label><br/>
+		<input type="text" id="cpf" placeholder="xxx.xxx.xxx-xx"/>
+		<br/>
+		<label for="nome">Nome</label><br/>
+		<input type="text" id="nome" placeholder="Escreva seu nome" />
+		<br/>
+		<button onclick="">Enviar</button>
+ 	</form>
+
+ 	<table id="dataTable" border="1.5" hidden="true">
+ 		
+ 	</table>
+
+ 	<script type="text/javascript" src="main.js"></script>	
+
+</body>
+</html>
