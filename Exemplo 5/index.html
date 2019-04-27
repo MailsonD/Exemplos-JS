@@ -22,14 +22,14 @@ Esse tipo de evento é muito útil para que você garanta que um trexo de códig
 Mas por hora, ignore a função de carregar() e siga aqui abaixo.
  -->
 
-	<form>
+	<form onsubmit="return false">
 		<label for="cpf">CPF</label><br/>
-		<input type="text" id="cpf" placeholder="xxx.xxx.xxx-xx"/>
+		<input type="text" id="inputCpf" placeholder="xxx.xxx.xxx-xx"/>
 		<br/>
 		<label for="nome">Nome</label><br/>
-		<input type="text" id="nome" placeholder="Escreva seu nome" />
+		<input type="text" id="inputNome" placeholder="Escreva seu nome" />
 		<br/>
-		<button onclick="">Enviar</button>
+		<button id="btnEnviar" onclick="salvar()" onmouseover="doItRed(event)" onmouseout="doItNormal(event)">Enviar</button>
  	</form>
 
  	<table id="dataTable" border="1.5" hidden="true">

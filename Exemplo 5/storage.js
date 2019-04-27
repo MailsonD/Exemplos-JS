@@ -79,5 +79,5 @@ function setObjectLocalStorage(key,value){
 
 function getObjectLocalStorage(key){
 	var value = localStorage.getItem(key);
-    return JSON.parse(value);
+    return value && JSON.parse(value);
 }
